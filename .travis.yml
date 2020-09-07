@@ -28,10 +28,7 @@ matrix:
         - env:
             SCRIPT=./scripts/build_manylinux1_x86_64.sh
             PACKAGE_NAME="psycopg2-binary"
-        - arch: arm64-graviton2
-          dist: focal
-          virt: lxd
-          group: edge
+        - arch: arm64
           env:
             SCRIPT=./scripts/build_manylinux2014_aarch64.sh
             PACKAGE_NAME="psycopg2-binary"
